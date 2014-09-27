@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Switch_Style">
+        <attr name="switchStyle" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="SwitchButton">
+        <attr name="thumb" format="reference" />
+        <attr name="track" format="reference" />
+        <attr name="textOn" format="string" />
+        <attr name="textOff" format="string" />
+        <attr name="thumbTextPadding" format="dimension" />
+        <attr name="switchTextAppearance" format="reference" />
+        <attr name="switchMinWidth" format="dimension" />
+        <attr name="switchPadding" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="TextApperance">
+        <attr name="textClolor" format="reference|color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="textFace">
+            <flag name="normal" value="0" />
+            <flag name="sans" value="1" />
+            <flag name="serif" value="2" />
+            <flag name="monospace" value="3" />
+        </attr>
+        <attr name="textColorHightLight" format="reference|color" />
+        <attr name="textColorHint" format="reference|color" />
+        <attr name="textColorLink" format="reference|color" />
+    </declare-styleable>
+
+    
+    <style name="Switch">
+        <item name="track">@drawable/switch_btn</item>
+        <item name="thumb">@drawable/switch_btn_slipper</item>
+        <item name="switchTextAppearance">@android:style/TextAppearance.Small</item>
+        <item name="textOn">@string/switch_on</item>
+        <item name="textOff">@string/switch_off</item>
+        <item name="thumbTextPadding">16dip</item>
+        <item name="switchMinWidth">80dip</item>
+        <item name="switchPadding">10dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#00FFFFFF</item>
+    </style>
+
+    
+    <string name="switch_on">On</string>
+    <string name="switch_off">Off</string>
+
+</resources>

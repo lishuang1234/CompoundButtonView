@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="5dp" >
 
     <TextView
         android:layout_width="match_parent"
@@ -63,5 +64,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:enabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义CompoundButton实现" />
+
+    <com.example.compoundbuttonview.view.SwitchButton
+        style="@style/Switch"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dip"
+        android:clickable="true" />
 
 </LinearLayout>
